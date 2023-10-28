@@ -14,8 +14,8 @@ library(readxl)
 library(fPortfolio)
 library(timeSeries)
 
-data <- read_excel("D:/download/Portfolio Management - ky1nam4/DataVCBFBCF-PORTFOLIO-DATA.xlsx", 
-                                      sheet = "NAVPS")
+data <- read_excel("D:/download/Portfolio Management VCBFBCF - ky1nam4/Data/VCBFBCF PORTFOLIO DATA.xlsx",
+                   sheet = "NAVPS")
 VCBFVN100 <- data[,c(1:3)]
 VCBFVN100$Date <- as.Date(VCBFVN100$Date, format = "%d/%m/%Y")
 # Order the dataframe by the "Date" column in descending order
